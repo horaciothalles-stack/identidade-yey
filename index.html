@@ -274,6 +274,14 @@ h2.title{
 }
 .mockup-card h3{ font-size:1.05rem; margin:0 0 8px; font-family:var(--serif); }
 .mockup-card p{ margin:0; color:var(--grey); line-height:1.6; font-size:14px; }
+.destaques-grid{
+  display:grid; grid-template-columns:repeat(auto-fit, minmax(140px, 1fr)); gap:12px; margin-top:16px;
+}
+.destaque-item{
+  margin:0; border-radius:8px; overflow:hidden; cursor:pointer; transition:transform .2s ease, box-shadow .2s ease;
+}
+.destaque-item:hover{ transform:scale(1.05); box-shadow:0 12px 28px rgba(10,22,28,0.12); }
+.destaque-item img{ display:block; width:100%; height:140px; object-fit:cover; }
 
 .feed-carousel-wrap{ position:relative; }
 .feed-carousel{
@@ -561,7 +569,7 @@ footer b{ color:var(--olive); }
   </video>
   <div class="hero-overlay"></div>
   <div class="hero-tag">Dossiê de Identidade Visual</div>
-  <img class="hero-symbol" src="assets/logo-oficial-escuro.png" alt="S�mbolo Y&Y">
+  <img class="hero-symbol" src="assets/logo-oficial-escuro.png" alt="S�mbolo Y&Y">
   <h1>Y&amp;Y <span>Vistoria</span><br>Cautelar</h1>
   <p>Toda compra de carro usado esconde uma história. Esta é a identidade visual construída para revelá-la — antes da assinatura.</p>
   <div class="hero-cta">
@@ -829,11 +837,17 @@ footer b{ color:var(--olive); }
       </article>
 
       <article class="mockup-card" data-category="destaques">
-        <figure><img src="assets/destaques/destaques-mockup.png" alt="Mockup de Destaques"></figure>
         <div class="meta">
           <span class="tag">Destaques</span>
           <h3>Pontos de Contato Fixos</h3>
           <p>Apresentação estruturada de serviços, laudos, bastidores e canal direto de atendimento.</p>
+        </div>
+        <div class="destaques-grid">
+          <figure class="destaque-item zoomable" data-zoom="assets/destaques/destaque-01.png"><img src="assets/destaques/destaque-01.png" alt="Destaque 01"></figure>
+          <figure class="destaque-item zoomable" data-zoom="assets/destaques/destaque-02.png"><img src="assets/destaques/destaque-02.png" alt="Destaque 02"></figure>
+          <figure class="destaque-item zoomable" data-zoom="assets/destaques/destaque-03.png"><img src="assets/destaques/destaque-03.png" alt="Destaque 03"></figure>
+          <figure class="destaque-item zoomable" data-zoom="assets/destaques/destaque-04.png"><img src="assets/destaques/destaque-04.png" alt="Destaque 04"></figure>
+          <figure class="destaque-item zoomable" data-zoom="assets/destaques/destaque-05.png"><img src="assets/destaques/destaque-05.png" alt="Destaque 05"></figure>
         </div>
       </article>
     </div>
